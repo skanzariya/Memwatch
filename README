@@ -1,0 +1,29 @@
+MemWatch
+
+What is MemWatch?
+MemWatch is a small utility that prints the actual memory(RAM) used by an Application. It let's you give memory usage in percentage at every instruction executed.
+
+Why MemWatch?
+If you are facing memory leak issue in your code and wants to debug the issue by executing each line and function, you are at right place. MemWatch is for you. It takes your application name and starts printing the Memory usage used by your application. Now in your code you place the debug point before the function and step over the function and watched the memory usage, if it has increased, that's the evil function in your code that eats the memory. Similar there are many technique to detect the leak, MemWatch will print the actual physical RAM usage used by your Application/Program.
+
+
+
+
+Usage:
+gcc -Wall -O3 -o MemWatch memwatch.c
+
+./MemWatch YourAppName
+
+for ex.
+/usr/bin/MemWatch firefox
+ Total Ram  Application   Percentage
+   1026708kB     149684kB     14.579%
+   1026708kB     149684kB     14.579%
+   1026708kB     149684kB     14.579%
+   1026708kB     149684kB     14.579%
+
+
+Suggestion/Improvements/Bugs are welcome. :-)
+
+
+/skanzariya
