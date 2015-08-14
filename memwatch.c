@@ -63,7 +63,7 @@ int CheckUsage(const char *filename)
       Percentage = (float)(((float)TotalUsage/1024)/(float)TotalRam)*100;
 
 
-      printf("%10lukB %10lukB %10.3f%\n", TotalRam, TotalUsage/1024, Percentage);
+      printf("%10lukB %10lukB %10.3f%%\n", TotalRam, TotalUsage/1024, Percentage);
 
       fclose(FP);
 
